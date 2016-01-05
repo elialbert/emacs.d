@@ -59,9 +59,6 @@
   (global-prettify-symbols-mode))
 
 
-(require-package 'undo-tree)
-(global-undo-tree-mode)
-(diminish 'undo-tree-mode)
 
 
 (require-package 'highlight-symbol)
@@ -162,6 +159,9 @@
 (global-unset-key [M-left])
 (global-unset-key [M-right])
 
+;; attempt to be able to scroll
+(global-set-key (kbd "C-v") 'scroll-down)
+(global-set-key (kbd "C-b") 'scroll-up)
 
 
 (defun kill-back-to-indentation ()
