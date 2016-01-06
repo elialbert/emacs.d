@@ -162,6 +162,10 @@
 ;; attempt to be able to scroll
 (global-set-key (kbd "C-v") 'scroll-down)
 (global-set-key (kbd "C-b") 'scroll-up)
+(global-set-key (kbd "C-<right>") 'forward-word)
+(global-set-key (kbd "C-<left>") 'backward-word)
+(global-set-key (kbd "C-<up>") 'backward-sentence)
+(global-set-key (kbd "C-<down>") 'forward-sentence)
 
 
 (defun kill-back-to-indentation ()
